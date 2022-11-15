@@ -11,7 +11,7 @@ import SwiftUI
 struct weather_checkerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DailyView()
         }
     }
 }

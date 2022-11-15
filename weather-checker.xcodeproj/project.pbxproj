@@ -15,6 +15,7 @@
 		AC87CAFF29238C12001887C8 /* weather_checkerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87CAFE29238C12001887C8 /* weather_checkerUITests.swift */; };
 		AC87CB0129238C12001887C8 /* weather_checkerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87CB0029238C12001887C8 /* weather_checkerUITestsLaunchTests.swift */; };
 		AC87CB1029238CC5001887C8 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = AC87CB0F29238CC5001887C8 /* readme.md */; };
+		AC87CB1229239561001887C8 /* project.md in Resources */ = {isa = PBXBuildFile; fileRef = AC87CB1129239561001887C8 /* project.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		AC87CAFE29238C12001887C8 /* weather_checkerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather_checkerUITests.swift; sourceTree = "<group>"; };
 		AC87CB0029238C12001887C8 /* weather_checkerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather_checkerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AC87CB0F29238CC5001887C8 /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		AC87CB1129239561001887C8 /* project.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = project.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		AC87CAD629238C11001887C8 = {
 			isa = PBXGroup;
 			children = (
+				AC87CB1129239561001887C8 /* project.md */,
 				AC87CB0F29238CC5001887C8 /* readme.md */,
 				AC87CAE129238C11001887C8 /* weather-checker */,
 				AC87CAF329238C12001887C8 /* weather-checkerTests */,
@@ -236,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC87CB1229239561001887C8 /* project.md in Resources */,
 				AC87CAEB29238C12001887C8 /* Preview Assets.xcassets in Resources */,
 				AC87CB1029238CC5001887C8 /* readme.md in Resources */,
 				AC87CAE729238C12001887C8 /* Assets.xcassets in Resources */,

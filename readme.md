@@ -43,5 +43,4 @@ Ze wzgledu na stosunkowo mala ilosc danych beda one pobierane przy kazdorazowym 
 
 ## Repozytorium
 
-<Adres strony głównej repozytorium GitHub, Gitlab, itd.>
-
+https://github.com/pallovsky/weather-checker

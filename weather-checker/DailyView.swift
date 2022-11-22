@@ -8,20 +8,39 @@
 import SwiftUI
 
 struct DailyView: View {
+    @StateObject private var weatherAPIClient = WeatherAPIClient()
+
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
-            Spacer()
-            HStack(alignment: .center, spacing: 16) {
-                Image(systemName: "sun.max.fill")
-                    .font(.largeTitle)
-                Text("24º")
-                    .font(.largeTitle)
-            }
-            Text("Sunny outside.\nDon't forget your hat!")
-                .font(.body)
-                .multilineTextAlignment(.center)
-            Spacer()
-        }
+                 Spacer()
+                 if let currentWeather = weatherAPIClient.currentWeather  {
+//                     Text(weatherAPIClient.currentLocation?.description ?? "")
+                     HStack(alignment: .center, spacing: 16) {
+                         currentWeather.weatherCode.image
+                             .font(.largeTitle)
+                         Text("\(currentWeather.temperature)º")
+                             .font(.largeTitle)
+                     }
+                     Text(currentWeather.weatherCode.description)
+                         .font(.body)
+                         .multilineTextAlignment(.center)
+                 } else {
+                     Text("No weather info available yet.\nTap on refresh to fetch new data.\nMake sure you have enabled location permissions for the app.")
+                         .font(.body)
+                         .multilineTextAlignment(.center)
+                     Button("Refresh", action: {
+                         Task {
+                             await weatherAPIClient.fetchWeather()
+                         }
+                     })
+                 }
+                 Spacer()
+             }
+             .onAppear {
+                 Task {
+                     await weatherAPIClient.fetchWeather()
+                 }
+             }
     }
 }
 

@@ -100,6 +100,41 @@ enum WeatherCode: String, Codable {
         }
     }
     
+    var shortDescription: String {
+        switch self {
+        case .clear:
+            return "Clear sky"
+        case .cloudy, .mostlyCloudy:
+            return "Cloudy"
+        case .mostlyClear, .partlyCloudy:
+            return "Mostly clear"
+        case .fog, .lightFog:
+            return "Fog"
+        case .lightWind:
+            return "Light wind"
+        case .wind, .strongWind:
+            return "Strong wind"
+        case .drizzle, .lightRain:
+            return "Light rain"
+        case .rain, .heavyRain:
+            return "Rainy"
+        case .snow, .flurries, .lightSnow, .heavySnow:
+            return "Snowy"
+        case .freezingDrizzle:
+            return "Freezing"
+        case .freezingRain, .lightFreezingRain, .heavyFreezingRain:
+            return "Freezing rain"
+        case .icePellets:
+            return "Ice Pellets"
+        case .heavyIcePellets:
+            return "Heavy ice pellets"
+        case .lightIcePellets:
+            return "Light ice pellets"
+        case .thunderstorm:
+            return "Thunderstorm"
+        }
+    }
+    
     var image: Image {
         switch self {
         case .clear:

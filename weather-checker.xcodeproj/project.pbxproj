@@ -18,6 +18,7 @@
 		AC87CB1229239561001887C8 /* project.md in Resources */ = {isa = PBXBuildFile; fileRef = AC87CB1129239561001887C8 /* project.md */; };
 		AC87CB14292399EF001887C8 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87CB13292399EF001887C8 /* WeatherModel.swift */; };
 		AC87CB1629239A21001887C8 /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC87CB1529239A21001887C8 /* WeatherAPIClient.swift */; };
+		E8B7398C29734AD800B0A854 /* WeeklyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B7398B29734AD800B0A854 /* WeeklyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		AC87CB1129239561001887C8 /* project.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = project.md; sourceTree = "<group>"; };
 		AC87CB13292399EF001887C8 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		AC87CB1529239A21001887C8 /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
+		E8B7398B29734AD800B0A854 /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				AC87CAE229238C11001887C8 /* weather_checkerApp.swift */,
 				AC87CAE429238C11001887C8 /* DailyView.swift */,
+				E8B7398B29734AD800B0A854 /* WeeklyView.swift */,
 				AC87CAE629238C12001887C8 /* Assets.xcassets */,
 				AC87CAE829238C12001887C8 /* weather_checker.entitlements */,
 				AC87CAE929238C12001887C8 /* Preview Content */,
@@ -275,6 +278,7 @@
 			files = (
 				AC87CAE529238C11001887C8 /* DailyView.swift in Sources */,
 				AC87CB14292399EF001887C8 /* WeatherModel.swift in Sources */,
+				E8B7398C29734AD800B0A854 /* WeeklyView.swift in Sources */,
 				AC87CB1629239A21001887C8 /* WeatherAPIClient.swift in Sources */,
 				AC87CAE329238C11001887C8 /* weather_checkerApp.swift in Sources */,
 			);
